@@ -110,3 +110,63 @@ h1 span {
     background-color: #1D4ED8;
     transform: translateY(-5px);
 }
+.Features {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.FeaturesDesc h2 {
+    font-size: 2rem;
+    color: hsl(0, 0%, 15%);
+    margin: 20px;
+}
+.FeaturesDesc p {
+    font-size: 1.2em;
+}
+.FeaturesContainers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+.FeaturesContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2564eb38;
+    transition: transform .3s ease-in, box-shadow .3s ease-in;
+}
+.FeaturesContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.pulseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.pulse {
+    padding: 50px;
+    border-radius: 50%;
+    background-color: #2564eb38;
+    position: relative;
+    overflow: hiddden;
+}
+.pulse::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2563EB;
+}
