@@ -185,7 +185,8 @@ h1 span {
     transform: translate(-50%, -50%);
     background-color: #2563EB;
 }
-.Mechanism {
+.Mechanism,
+.Pricing {
     background-color: #2564eb1c;
 }
 .Numbering {
