@@ -242,3 +242,69 @@ q {
     color: #334155;
     text-align: left;
 }
+/* .pricing-container {
+    gap: 30px;
+} */
+.offers {
+    background: #F8FAFC;
+    margin: 10px;
+}
+.offers h2, 
+.offers span {
+    color: black;
+    font-weight: 700;
+}
+.offers h2 {
+    margin: 15px 0;
+}
+.offers span {
+    font-size: 2.5rem;
+}
+.offers p {
+    margin-bottom: 15px;
+    color: hsl(215, 25%, 30%);
+    font-weight: 400;
+} 
+.offers ul hr {
+    background-color: hsl(215, 25%, 30%);
+    opacity: 30%;
+}
+.offers ul {
+    list-style: none;
+    width: 90%;
+}
+.offers ul li {
+    margin: 5px;
+    padding: 5px;
+    color: #334155;
+}
+.offers button {
+    background-color: #2563EB;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    width: 90%;
+    margin: 20px 0;
+}
+.main-offer {
+    border: 2px solid #2563EB;
+    position: relative;
+}
+.main-offer::before {
+    content: 'Most Popular';
+    position: absolute;
+    background-color: #2563EB;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
