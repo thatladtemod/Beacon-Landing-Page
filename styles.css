@@ -19,7 +19,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .container {
@@ -72,6 +72,37 @@ header{
 }
 .navLinks :hover {
     color: #2563EB;
+}
+.mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    z-index: 1000;
+    background-color: #f8fafc49;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: display .3s ease-in-out;
+}
+.mobile li{
+    width: 100%;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.mobile a {
+    width: 100%;
+}
+.menu {
+    font-size: 1.5rem;
+}
+.menuBar {
+    display: none;
 }
 .Hero {
     height: 100vh;
@@ -387,4 +418,21 @@ footer div {
 footer div p {
     font-weight: 500;
     color: hsl(215, 25%, 30%);
+}
+
+/* Responsiive Design */
+
+@media  screen and (max-width: 992px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menuBar {
+        display: block;
+    }
+}
+@media  screen and (max-width: 500px) {
+    .mobile {
+        width: 100%;
+        padding: 20px;
+    }
 }
