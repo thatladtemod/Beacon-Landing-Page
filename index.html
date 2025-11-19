@@ -22,7 +22,7 @@
         </div>
 
         <ul class="navLinks mobile">
-          <li class="menu" onclick="closeSideBar()"><a href="#"><i class="fa-solid fa-close"></i></a></li>
+          <li class="menu" onclick="closeSideBar(event)"><a href="#"><i class="fa-solid fa-close"></i></a></li>
           <li><a href="#Features">Features</a></li>
           <li><a href="#Mechanism">How It Works</a></li>
           <li><a href="#Testimonials">Testimonials</a></li>
@@ -315,17 +315,18 @@
         <p>&copy; 2025 Beacon. All rights reserved.</p>
       </div>
     </footer>
-  </body>
-
-  <script>
+    
+    <script>
     function showSideBar() {
       const sideBar = document.querySelector(".mobile");
       sideBar.style.display = "flex";
     }
 
-    function closeSideBar() {
+    function closeSideBar(e) {
+      e.preventDefault()
       const sideBar = document.querySelector(".mobile");
       sideBar.style.display = "none";
     }
   </script>
+  </body>
 </html>
